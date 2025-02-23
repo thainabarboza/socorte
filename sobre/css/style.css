@@ -13,3 +13,41 @@ body{
 img{
 	max-width: 100%
 }
+
+p{
+	font-family:'Roboto', sans-serif;
+	font-weight: 400;
+	color: #455763;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:'Gupter', serif;
+	font-weight: 500;
+	color: #455763;
+}
+
+h1{
+	font-size: 90px;
+}
+
+h2{
+	font-size: 40px;
+}
+.card-about {
+	padding: 14px 20px;
+}
+
+.card-about p{
+	margin-top: 16px;
+	
+}
+
+.badge-card{
+	background-color:#455763;
+	color:#E4EAEB;
+	padding: 5px 10px;
+}
+
+.card-container{
+ border: 1px solid #455763;
+}
