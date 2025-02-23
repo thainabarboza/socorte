@@ -65,3 +65,30 @@ h2{
 	color:#455763;
 	background-color:#E4EAEB;
 }
+
+.light-container{
+	padding: 20px;
+	background-color: #E4EAEB;
+}
+
+.dark-container{
+	padding: 20px;
+	background-color:#455763;
+}
+
+.card-value{
+	height: 290px;
+	padding: 14px 20px;
+}
+
+.card-value h3{
+	margin-top: 40px;
+}
+
+.card-value .badge-card{
+	margin-right: 20px;
+}
+
+.card-value-container{
+	margin-bottom: 20px;
+}
