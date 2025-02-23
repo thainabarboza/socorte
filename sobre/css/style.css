@@ -50,4 +50,18 @@ h2{
 
 .card-container{
  border: 1px solid #455763;
+ transition: .4s;
+}
+
+.card-container:hover{
+	background-color:#455763;
+}
+
+.card-container:hover p{
+	color:#E4EAEB;
+}
+
+.card-container:hover .badge-card{
+	color:#455763;
+	background-color:#E4EAEB;
 }
