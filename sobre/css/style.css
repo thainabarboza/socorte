@@ -92,3 +92,7 @@ h2{
 .card-value-container{
 	margin-bottom: 20px;
 }
+
+.agulha{
+	display: flex;
+}
