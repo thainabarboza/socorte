@@ -35,6 +35,9 @@ h2{
 }
 .card-about {
 	padding: 14px 20px;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
 }
 
 .card-about p{
@@ -46,6 +49,7 @@ h2{
 	background-color:#455763;
 	color:#E4EAEB;
 	padding: 5px 10px;
+	width: fit-content;
 }
 
 .card-container{
@@ -119,4 +123,28 @@ h2{
 
 .card-value-container:hover h3{
 	display: none;
+}
+.cta-product{
+	color: #E4EAEB;
+	font-family:'Gupter', serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+.btn-catalogo{
+	font-family:'Roboto', sans-serif;
+	font-weight: 700;
+	color:#E4EAEB;
+	border: 1px solid #E4EAEB;
+}
+
+.btn-catalogo:hover{
+	background-color:#E4EAEB;
+	color:#455763;
+}
+
+.content-center{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
