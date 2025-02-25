@@ -93,6 +93,30 @@ h2{
 	margin-bottom: 20px;
 }
 
-.agulha{
-	display: flex;
+.card-value-container h3{
+	font-weight: 700;
+}
+
+.card-value-container:hover{
+	color:#000000;
+	background-color:#FF7714;
+}
+
+.card-value-container:hover .badge-card{
+	background-color:#E4EAEB;
+	color:#000000;
+}
+
+.card-text-value{
+	display: none;
+	margin-top: 40px;
+}
+
+.card-value-container:hover .card-text-value{
+	display: block;
+	color:#000000;
+}
+
+.card-value-container:hover h3{
+	display: none;
 }
