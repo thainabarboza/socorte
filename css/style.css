@@ -14,6 +14,22 @@ img{
 	max-width: 100%
 }
 
+p{
+	font-family:'Roboto', sans-serif;
+	font-weight: 400;
+	color: #455763;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:'Gupter', serif;
+	font-weight: 500;
+	color: #455763;
+}
+
+h2{
+	font-size: 40px;
+}
+
 
 /*SOBRE NÓS*/
 
@@ -68,6 +84,7 @@ img{
 .card-value{
 	height: 290px;
 	padding: 14px 20px;
+	position: relative;
 }
 
 .card-value h3{
@@ -134,23 +151,41 @@ img{
     align-items: center;
 }
 
+.sobre-container{
+	display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sobre-title h1{
+	font-size: 70px;
+}
+
+.agulha img{
+	height: 125px;   
+    margin-right: 25px;
+}
+
+.icone-value{
+	position: absolute;
+    right: 20px;
+    bottom: 20px;
+    animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes rotate{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+
 /*CONTACTO*/
 
-p{
-	font-family:'Roboto', sans-serif;
-	font-weight: 400;
-	color: #455763;
-}
-
-h1,h2,h3,h4,h5,h6{
-	font-family:'Gupter', serif;
-	font-weight: 500;
-	color: #455763;
-}
-
-h2{
-	font-size: 40px;
-}
 
 .light-container{
 	padding: 20px;
@@ -319,4 +354,10 @@ h2{
 .card-entretelas{
 	position: relative;
 	height: 180px;
+}
+
+.container-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
