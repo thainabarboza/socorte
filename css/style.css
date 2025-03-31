@@ -414,18 +414,16 @@ hr{
 
 .entretelas-icons{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 15px;
-  position: absolute;
+  position: relative;
   width: 100%;
+  margin-bottom: 7px;
   
 }
 
 .entretelas-icons img{
-     position: relative;
-    bottom: 26px;
-    left: 505px;
     cursor: pointer;
   }
 
