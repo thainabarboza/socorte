@@ -1,27 +1,560 @@
+<!DOCTYPE html>	
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Bootstrap</title>
-		<meta name="keywords" content="">
-		<meta name="description" content="">
-
-		<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/all.min.css">
-
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>SOCORTE | Início </title>
+		<meta charset="utf-8"> 
+			<meta name="description" content="Texto descritivo da pagina ate 255 caracteres">
+			<meta name="keywords" content="palavra chave 1, termo chave 2, ate 10 termos chaves">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link rel="icon" href="icons/favicon.png" type="image/png">
 	</head>
-	<body>
 
-		<div>
-			<h2> Oi teste outra pessoa oi </h2>
-		</div>
+
+	<body class="body-inicio" id="topo">
+
+		<header class="header-inicio">
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-md-1 col-2">
+					</div>
+					<div class="col-md-10 col-8">
+						<a href="index.html" >
+							<img src="img/logo_1.png" alt="logo socorte" width="300" height="auto" class="mx-auto d-block mt-3 mb-1">
+						</a>
+					</div>
+					<div class="col-md-1 col-2 d-flex align-items-center justify-content-center">
+						<p class="idioma ">PT 
+						    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+						    	<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+						    </svg>
+					    </p>
+					</div>
+					<hr>				
+					<nav class="navbar nav-hamb px-4 col-4 col-md-12">
+					<!-- menu hambúrguer -->
+						<button class="btn btn-lg btn-hamb d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+						&#9776;
+						</button>
+						<!-- Menu normal -->
+						<div class="d-none d-md-flex gap-4 menu_barra mx-auto">
+							<a href="socorte.html" class="">SOCORTE</a>
+							<a href="servicos.html" class="">SERVIÇOS</a>
+							<a href="produtos.html" class="">PRODUTOS</a>
+							<a href="contactos.html" class="">CONTACTOS</a>
+							<a href="https://retrosariaonline.pt/" target="_blank" class="">LOJA</a>
+						</div>
+					</nav>
+					<hr>	
+				</div>
+				<!-- Menu lateral para mobile -->
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
+					<div class="offcanvas-header hamb-titulo">
+						<h5 class="offcanvas-title ">Menu</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+					</div>
+					<div class="offcanvas-body menu_hamb ">
+						<ul class="list-group">
+							<li class="list-group-item hamb-item"><a href="socorte.html">SOCORTE</a></li>
+							<li class="list-group-item hamb-item"><a href="servicos.html">SERVIÇOS</a></li>
+							<li class="list-group-item hamb-item"><a href="produtos.html">PRODUTOS</a></li>
+							<li class="list-group-item hamb-item"><a href="contactos.html">CONTACTOS</a></li>
+							<li class="list-group-item hamb-item"><a href="https://retrosariaonline.pt/"  target="_blank">LOJA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!-- Carousel -->
+			<div id="id-carousel" class="carousel slide" data-bs-ride="true">
+
+			  <!-- Bolinha -->
+			  <div class="carousel-indicators ">
+			    <button type="button" data-bs-target="#id-carousel" data-bs-slide-to="0" class="active bolinha"></button>
+			    <button type="button" data-bs-target="#id-carousel" data-bs-slide-to="1" class="bolinha"></button>
+			    <button type="button" data-bs-target="#id-carousel" data-bs-slide-to="2" class="bolinha"></button>
+			  </div>
+			  <!-- The slideshow/carousel -->
+
+			  <div class="carousel-inner carrossel_imgs">
+			    <div class="carousel-item active img-descricao">
+			      <img src="img/banner_1.png" alt="entretela" class="d-block" style="width:100%">
+			      <div class="carousel-caption descricao">
+				        <h2 class="preto">Entretelas para confecção profissional: <br> escolha qualidade e durabilidade!</h2>
+						<a href="entretelas.html"> <button type="button" class="btn botao-1">SAIBA MAIS</button></a>
+			      </div>			  
+			    </div>
+
+			 	<div class="carousel-item carrossel_imgs">
+    			 <video class="d-block" autoplay loop muted style="width:100%">
+      			 	<source src="img/video.mp4" type="video/mp4"  >
+   				 </video>
+   				 </div>
+
+
+			    <div class="carousel-item img-descricao">
+			      <img src="img/banner_3.png" alt="contacto" class="d-block" style="width:100%">
+			      <div class="carousel-caption descricao">
+			        <h2 class="branco">Atendimento personalizado para empresas! <br>Fale com os nossos especialistas.</h2>
+					<a href="contactos.html"><button type="button" class="btn botao-3">CONTACTE-NOS</button></a>
+			      </div>  
+			    </div>
+			  </div>
+			  
+			  <!-- Left and right controls/icons -->
+			  <button class="carousel-control-prev" type="button" data-bs-target="#id-carousel" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#id-carousel" data-bs-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			  </button>
+			</div>
+
+
+			  <!-- Produtos e Serviços -->
+
+			<section class="section1">
+				<h2>Produtos e Serviços</h2>
+				<div class="container">
+					<div class="row">
+						<div class="sec1 col-12 col-md-4">
+							<div class="acessorios">
+								<div class="sec1-img">
+									<a href="produtos.html"><img src="img/acessorios.jpg"></a>
+								</div>
+								
+								<div class="caption-sec1">
+									<a href="produtos.html"><h5>Acessórios</h5></a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="sec1 col-12 col-md-4">
+							<div class="artigos">
+								<div class="sec1-img">
+									<a href="produtos.html"><img class="img-artigo" src="img/artigos.jpg"></a>
+								</div>
+								
+								<div class="caption-sec1">
+									<a href="produtos.html"><h5>Artigos</h5></a>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="sec1 col-12 col-md-4">
+							<div class="servicos">
+								<div class="sec1-img">
+									<a href="servicos.html"><img src="img/servicos.jpg"></a>
+								</div>
+								
+								<div class="caption-sec1">
+									<a href="produtos.html"><h5>Serviços</h5></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			  <!-- Divisão -->
+
+			<section class="section2">
+
+				<div class="container-fluid">
+					<div class="row">
+					<img src="img/divisao.png" class="sec2-img">
+				</div></div>
+			</section>
+
+
+			  <!-- PRODUTOS RELEVANTES -->
+			<section class="section3">
+
+				<h2>Produtos Relevantes</h2>
+			
+				<div class="sec3">
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/servicos/figuras.jpg"></a>
+								<div class="overlay-text">Execução de acordo com as suas instruções</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">Figuras de Serivço</a>
+							</div>
+						</div>
+					</div>			
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/servicos/corte_vies.jpg"></a>
+								<div class="overlay-text">Transformação e corte de fitas em viés na largura que desejar</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">Corte Viés</a>
+							</div>
+						</div>
+					</div>			
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/servicos/passepoil.jpg"></a>
+								<div class="overlay-text">Confeção de vivo com ou sem cordão em várias medidas</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">Vivos Passepoil</a>
+							</div>
+						</div>
+					</div>			
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/artigos/refletores.jpg"></a>
+								<div class="overlay-text">Fitas refletoras de alta visibilidade para aplicações costura, transfer ou adesivas</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">Refletores</a>
+							</div>
+						</div>
+					</div>			
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/artigos/tnt.jpg"></a>
+								<div class="overlay-text">Fitas Tecido não Tecido</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">Tecido não Tecido</a>
+							</div>
+						</div>
+					</div>			
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/acessorios/fc.jpg"></a>
+								<div class="overlay-text">Vulgarmente conhecido por Velcro, disponível em argola ou gancho em diversas larguras e cores</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">FECHO DE CONTACTO</a>
+							</div>
+						</div>
+					</div>			
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/acessorios/elasticos.jpg"></a>
+								<div class="overlay-text">Disponíveis em preto ou em branco, em várias larguras</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">elásticos</a>
+							</div>
+						</div>
+					</div>			
+					<div class="sec3-item">
+						<div class="sec3-box">
+							<div class="sec3-img">
+								<a href="#"><img src="img/acessorios/precintas.jpg"></a>
+								<div class="overlay-text">Precintas em polipropileno disponíveis em várias larguras e cores</div>
+							</div>
+							<div class="sec3-titulo mx-auto d-block ">
+								<a href="#">precintas</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="section4">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-12 sec4-img">
+							<img src="img/fitas.avif">
+						</div>
+						<div class="col-lg-6 col-12 sec4-desc">	
+							<h1 class="cima">Especialista a fazer fitas desde 1979</h1>
+							<button type="button" class="btn btn-catalogos btn-mobile">CATÁLOGO</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			  <!-- TIMELINE -->
+
+			<section class="section5">
+				<h2>Nossa História</h2>
+				<div class="container">
+					<div class="row">
+						<div class="timeline-container">
+							<h1 id="year-title">1979</h1>
+							<div class="timeline">
+								<div class="year active" data-year="1979" onclick="selectYear(1979)"><span>1979</span></div>
+								<div class="year" data-year="1987" onclick="selectYear(1987)"><span>1987</span></div>
+								<div class="year" data-year="1988" onclick="selectYear(1988)"><span>1988</span></div>
+								<div class="year" data-year="1991" onclick="selectYear(1991)"><span>1991</span></div>
+								<div class="year" data-year="1995" onclick="selectYear(1995)"><span>1995</span></div>
+								<div class="year" data-year="2006" onclick="selectYear(2006)"><span>2006</span></div>
+								<div class="year" data-year="2013" onclick="selectYear(2013)"><span>2013</span></div>
+								<div class="year" data-year="2015" onclick="selectYear(2015)"><span>2015</span></div>
+								<div class="year" data-year="2016" onclick="selectYear(2016)"><span>2016</span></div>
+							</div>
+							<div class="content col-md-6" id="content">
+								<p id="year-description">Empresa fundada no dia 9 de Maio por Manuel Teixeira Miranda, e começa a laborar na Zona Indústrial do Porto, na Rua Eng. Ezequiel Campos. Tudo começou com uma máquina de corte, com a qual se iniciou o crescimento gradual e sustentado do negócio.</p>
+							</div>
+						</div>
+
+			  <!-- timeline - mobile -->
+						<div class=" timeline-linha">
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>1979</h5>
+						      <p>
+						        Empresa fundada no dia 9 de Maio por Manuel Teixeira Miranda, e começa a laborar na Zona Indústrial do Porto, na Rua Eng. Ezequiel Campos. Tudo começou com uma máquina de corte, com a qual se iniciou o crescimento gradual e sustentado do negócio.
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>1987</h5>
+						      <p>
+						        Com a expansão do negócio tornou-se insuficiente o espaço, e proporcionou-se a aquisição de armazém em Leça da Palmeira (Rua Veloso Salgado), passando a laborar nos dois locais em simultâneo.
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>1988</h5>
+						      <p>
+						        Ocorre o processo de informatização da empresa, que desde então desenvolveu os seus sistemas à medida dos requisitos do negócio, colocando-se desde então na vanguarda na gestão dos seus processos com integração informática.
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>1991</h5>
+						      <p>
+						        A qualidade reconhecida do trabalho desenvolvido a nível nacional leva à conquista de clientes e parcerias internacionais. O mercado internacional começa a crescer e a representar cada vez mais uma parte importante do trabalho e da faturação.
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>1995</h5>
+						      <p>
+						        A necessidade de unificação das pessoas e dos processos levou à aquisição de novo armazém na Zona Industrial do Porto, na Rua Delfim Ferreira, consolidando aqui toda a atividade da empresa que estava fragmentada. Este local é hoje onde se situa a sede e o centro produtivo da empresa.
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>2006</h5>
+						      <p>
+						        É criado o primeiro website institucional para a Socorte que vem dar presença institucional da empresa na web. Pode ser consultado aqui
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>2013</h5>
+						      <p>
+						        Ocorre a aquisição e incorporação da empresa concorrente Texreps Portuguesa - Produtos Têxteis, Lda, detida até então por um grupo sueco. Com esta compra, a Socorte aumenta a sua oferta de produtos e serviços, e assume-se cada vez mais como um fornecedor global de fitas e de acessórios têxteis.
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>2015</h5>
+						      <p>
+						        A Texreps Portuguesa altera o seu nome para Metro ao Quadrado e implementa uma nova imagem para reforço do seu posicionamento como fornecedor de referência de produtos têxteis nos mercados nacional e internacional. Foi ainda criada a marca Metro ao Quadrado, projeto que mais tarde irá dar origem a loja online de venda ao consumidor (https://loja.socorte.pt/).
+						      </p>
+						    </div>
+						    <div class="elemento">
+						      <div class="linha_bola"><div class="linha_vert"></div><div class="timeline_bola"></div></div>
+						      <h5>2016</h5>
+						      <p>
+						        É realizado o lançamento de novo website.
+						      </p>
+						    </div>
+							</div>
+						</div>
+					</div>
+				</section>
+		</main>
+
+
+		<footer class="footer">
+
+			<!-- Footer Mobile -->
+
+			<div class="footer-mobile d-flex flex-column align-items-center d-md-none">
+				<a href="index.html">
+					<img src="img/logo_3.png" alt="logo socorte" width="250" height="auto" class="mx-auto d-block justify-content-center mt-3">
+				</a>
+				<ul class="footer-menu-mobile">
+					<li><a href="socorte.html">SOCORTE</a></li>
+					<li><a href="servicos.html">SERVIÇOS</a></li>
+					<li><a href="produtos.html">PRODUTOS</a></li>
+					<li><a href="contactos.html">CONTACTOS</a></li>
+					<li><a href="https://retrosariaonline.pt/" class="nav-link" target="_blank">LOJA</a></li>
+					<li>
+						<a href="https://www.facebook.com/socortelda/" class="nav-link" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+								<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Footer Desktop -->
+
+			<div class="footer-desktop d-none d-md-flex ">
+		        <div class="footer-logo">
+		        	<a href="index.html">
+		            	<img src="img/logo_simbolo_3.png" alt="logo socorte" width="50" height="auto" class="mx-auto d-block justify-content-center ">
+		            </a>
+		        </div>                            
+		        <ul class="footer-menu-desktop d-flex gap-4">
+							<li><a href="socorte.html">SOCORTE</a></li>
+							<li><a href="servicos.html">SERVIÇOS</a></li>
+							<li><a href="produtos.html">PRODUTOS</a></li>
+							<li><a href="contactos.html">CONTACTOS</a></li>
+		          <li><a href="https://retrosariaonline.pt/" class="nav-link" target="_blank">LOJA</a></li>
+		          <li>
+		            <a href="https://www.facebook.com/socortelda/" class="nav-link" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+								<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+							</svg>
+						</a>
+					</li>
+		        </ul>
+		    </div>
+
+		    <p class="footer-text">© 2025 Socorte - Todos os direitos reservados | Powered by <a href="https://wevolved.com/">WEVOLVED - Agência Criativa</a></p>
+
+		</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- IMPORTAÇÃO JS + BOOTSTRAP
+	o bootstrap precisa do jquery para funcionar, por isso é posto nessa ordem -->
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+	<script src="js/bootstrap.min.js">
+	</script>
+
 	
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script type="text/javascript">
 
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+const descriptions = {
+            1979: "Empresa fundada no dia 9 de Maio por Manuel Teixeira Miranda, e começa a laborar na Zona Indústrial do Porto, na Rua Eng. Ezequiel Campos. Tudo começou com uma máquina de corte, com a qual se iniciou o crescimento gradual e sustentado do negócio.",
+            1987: "Com a expansão do negócio tornou-se insuficiente o espaço, e proporcionou-se a aquisição de armazém em Leça da Palmeira (Rua Veloso Salgado), passando a laborar nos dois locais em simultâneo.",
+            1988: "Ocorre o processo de informatização da empresa, que desde então desenvolveu os seus sistemas à medida dos requisitos do negócio, colocando-se desde então na vanguarda na gestão dos seus processos com integração informática.",
+            1991: "A qualidade reconhecida do trabalho desenvolvido a nível nacional leva à conquista de clientes e parcerias internacionais. O mercado internacional começa a crescer e a representar cada vez mais uma parte importante do trabalho e da faturação.",
+            1995: "A necessidade de unificação das pessoas e dos processos levou à aquisição de novo armazém na Zona Industrial do Porto, na Rua Delfim Ferreira, consolidando aqui toda a atividade da empresa que estava fragmentada. Este local é hoje onde se situa a sede e o centro produtivo da empresa.",
+            2006: "É criado o primeiro website institucional para a Socorte que vem dar presença institucional da empresa na web. Pode ser consultado aqui",
+            2013: "Ocorre a aquisição e incorporação da empresa concorrente Texreps Portuguesa - Produtos Têxteis, Lda, detida até então por um grupo sueco. Com esta compra, a Socorte aumenta a sua oferta de produtos e serviços, e assume-se cada vez mais como um fornecedor global de fitas e de acessórios têxteis.",
+            2015: "A Texreps Portuguesa altera o seu nome para Metro ao Quadrado e implementa uma nova imagem para reforço do seu posicionamento como fornecedor de referência de produtos têxteis nos mercados nacional e internacional. Foi ainda criada a marca Metro ao Quadrado, projeto que mais tarde irá dar origem a loja online de venda ao consumidor (https://loja.socorte.pt/).",
+            2016: "É realizado o lançamento de novo website."
+        };
+        
+        function selectYear(year) {
+            document.getElementById("year-title").textContent = year;
+            document.getElementById("year-description").textContent = descriptions[year];
+            
+            document.querySelectorAll(".year").forEach(el => el.classList.remove("active"));
+            document.querySelector(`.year[data-year='${year}']`).classList.add("active");
+        }
+
+
+
+
+
+
+
+
+</script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,21 +1,71 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Contactos</title>
-		<meta name="keywords" content="">
-		<meta name="description" content="">
-
-		<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/all.min.css">
-
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>SOCORTE | Contactos </title>
+		<meta charset="utf-8"> 
+			<meta name="description" content="Texto descritivo da pagina ate 255 caracteres">
+			<meta name="keywords" content="palavra chave 1, termo chave 2, ate 10 termos chaves">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link rel="icon" href="icons/favicon.png" type="image/png">
 	</head>
+
 	<body>
 
+		<header class="header-inicio">
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-md-1 col-2">
+					</div>
+					<div class="col-md-10 col-8">
+						<a href="index.html" >
+							<img src="img/logo_1.png" alt="logo socorte" width="300" height="auto" class="mx-auto d-block mt-3 mb-1">
+						</a>
+					</div>
+					<div class="col-md-1 col-2 d-flex align-items-center justify-content-center">
+						<p class="idioma ">PT 
+						    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+						    	<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+						    </svg>
+					    </p>
+					</div>
+					<hr>				
+					<nav class="navbar nav-hamb px-4 col-4 col-md-12">
+					<!-- menu hambúrguer -->
+						<button class="btn btn-lg btn-hamb d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+						&#9776;
+						</button>
+						<!-- Menu normal -->
+						<div class="d-none d-md-flex gap-4 menu_barra mx-auto">
+							<a href="socorte.html" class="">SOCORTE</a>
+							<a href="servicos.html" class="">SERVIÇOS</a>
+							<a href="produtos.html" class="">PRODUTOS</a>
+							<a href="contactos.html" class="">CONTACTOS</a>
+							<a href="https://retrosariaonline.pt/" target="_blank" class="">LOJA</a>
+						</div>
+					</nav>
+					<hr>	
+				</div>
+				<!-- Menu lateral para mobile -->
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
+					<div class="offcanvas-header hamb-titulo">
+						<h5 class="offcanvas-title ">Menu</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+					</div>
+					<div class="offcanvas-body menu_hamb ">
+						<ul class="list-group">
+							<li class="list-group-item hamb-item"><a href="socorte.html">SOCORTE</a></li>
+							<li class="list-group-item hamb-item"><a href="servicos.html">SERVIÇOS</a></li>
+							<li class="list-group-item hamb-item"><a href="produtos.html">PRODUTOS</a></li>
+							<li class="list-group-item hamb-item"><a href="contactos.html">CONTACTOS</a></li>
+							<li class="list-group-item hamb-item"><a href="https://retrosariaonline.pt/"  target="_blank">LOJA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
 		<div class="container-fluid light-container">
 			<div class="section-title">
 				<h2>Contactos</h2>
@@ -151,6 +201,61 @@
 			
 		
 		</div>
+
+	</main>
+	
+		<footer class="footer">
+
+			<!-- Footer Mobile -->
+
+			<div class="footer-mobile d-flex flex-column align-items-center d-md-none">
+				<a href="index.html">
+					<img src="img/logo_3.png" alt="logo socorte" width="250" height="auto" class="mx-auto d-block justify-content-center mt-3">
+				</a>
+				<ul class="footer-menu-mobile">
+					<li><a href="socorte.html">SOCORTE</a></li>
+					<li><a href="servicos.html">SERVIÇOS</a></li>
+					<li><a href="produtos.html">PRODUTOS</a></li>
+					<li><a href="contactos.html">CONTACTOS</a></li>
+					<li><a href="https://retrosariaonline.pt/" class="nav-link" target="_blank">LOJA</a></li>
+					<li>
+						<a href="https://www.facebook.com/socortelda/" class="nav-link" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+								<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Footer Desktop -->
+			
+			<div class="footer-desktop d-none d-md-flex ">
+		        <div class="footer-logo">
+		        	<a href="index.html">
+		            	<img src="img/logo_simbolo_3.png" alt="logo socorte" width="50" height="auto" class="mx-auto d-block justify-content-center ">
+		            </a>
+		        </div>                            
+		        <ul class="footer-menu-desktop d-flex gap-4">
+							<li><a href="socorte.html">SOCORTE</a></li>
+							<li><a href="servicos.html">SERVIÇOS</a></li>
+							<li><a href="produtos.html">PRODUTOS</a></li>
+							<li><a href="contactos.html">CONTACTOS</a></li>
+		          <li><a href="https://retrosariaonline.pt/" class="nav-link" target="_blank">LOJA</a></li>
+		          <li>
+		            <a href="https://www.facebook.com/socortelda/" class="nav-link" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+								<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+							</svg>
+						</a>
+					</li>
+		        </ul>
+		    </div>
+
+		    <p class="footer-text">© 2025 Socorte - Todos os direitos reservados | Powered by <a href="https://wevolved.com/">WEVOLVED - Agência Criativa</a></p>
+
+		</footer>
+
 		
 
 		<script src="js/jquery-3.7.1.min.js"></script>
