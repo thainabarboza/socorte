@@ -52,7 +52,7 @@
 				<!-- Menu lateral para mobile -->
 				<div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
 					<div class="offcanvas-header hamb-titulo">
-						<h5 class="offcanvas-title ">Menu</h5>
+						<h5 class="offcanvas-title">MENU</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
 					</div>
 					<div class="offcanvas-body menu_hamb ">
@@ -226,7 +226,7 @@
 						<div class="sec3-box">
 							<div class="sec3-img">
 								<a href="#"><img src="img/artigos/tnt.jpg"></a>
-								<div class="overlay-text">Fitas Tecido não Tecido</div>
+								<div class="overlay-text">É comercializado com a referência F421 da Socorte em composição 100% polipropileno.</div>
 							</div>
 							<div class="sec3-titulo mx-auto d-block ">
 								<a href="#">Tecido não Tecido</a>
@@ -272,12 +272,12 @@
 			<section class="section4">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 col-12 sec4-img">
+						<div class="col-lg-6 col-md-4 col-12 sec4-img">
 							<img src="img/fitas.avif">
 						</div>
-						<div class="col-lg-6 col-12 sec4-desc">	
+						<div class="col-lg-6 col-md-8 col-12 sec4-desc">	
 							<h1 class="cima">Especialista a fazer fitas desde 1979</h1>
-							<button type="button" class="btn btn-catalogos btn-mobile">CATÁLOGO</button>
+							<a href="produtos.html"><button type="button" class="btn btn-catalogos btn-mobile">CATÁLOGO</button></a>
 						</div>
 					</div>
 				</div>
@@ -291,9 +291,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="timeline-container">
-							<h1 id="year-title">1979</h1>
+							<center><h1 id="year-title" class="">1979</h1></center>
 							<div class="timeline">
-								<div class="year active" data-year="1979" onclick="selectYear(1979)"><span>1979</span></div>
+								<div class="year active " data-year="1979" onclick="selectYear(1979)"><span>1979</span></div>
 								<div class="year" data-year="1987" onclick="selectYear(1987)"><span>1987</span></div>
 								<div class="year" data-year="1988" onclick="selectYear(1988)"><span>1988</span></div>
 								<div class="year" data-year="1991" onclick="selectYear(1991)"><span>1991</span></div>
@@ -303,9 +303,9 @@
 								<div class="year" data-year="2015" onclick="selectYear(2015)"><span>2015</span></div>
 								<div class="year" data-year="2016" onclick="selectYear(2016)"><span>2016</span></div>
 							</div>
-							<div class="content col-md-6" id="content">
+							<center><div class="content col-md-6" id="content">
 								<p id="year-description">Empresa fundada no dia 9 de Maio por Manuel Teixeira Miranda, e começa a laborar na Zona Indústrial do Porto, na Rua Eng. Ezequiel Campos. Tudo começou com uma máquina de corte, com a qual se iniciou o crescimento gradual e sustentado do negócio.</p>
-							</div>
+							</div></center>
 						</div>
 
 			  <!-- timeline - mobile -->
@@ -433,128 +433,13 @@
 		</footer>
 
 
+	<!-- IMPORTAÇÃO JS + BOOTSTRAP -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- IMPORTAÇÃO JS + BOOTSTRAP
-	o bootstrap precisa do jquery para funcionar, por isso é posto nessa ordem -->
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-	<script src="js/bootstrap.min.js">
-	</script>
-
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
 	
-	<script type="text/javascript">
-
-
-
-
-const descriptions = {
-            1979: "Empresa fundada no dia 9 de Maio por Manuel Teixeira Miranda, e começa a laborar na Zona Indústrial do Porto, na Rua Eng. Ezequiel Campos. Tudo começou com uma máquina de corte, com a qual se iniciou o crescimento gradual e sustentado do negócio.",
-            1987: "Com a expansão do negócio tornou-se insuficiente o espaço, e proporcionou-se a aquisição de armazém em Leça da Palmeira (Rua Veloso Salgado), passando a laborar nos dois locais em simultâneo.",
-            1988: "Ocorre o processo de informatização da empresa, que desde então desenvolveu os seus sistemas à medida dos requisitos do negócio, colocando-se desde então na vanguarda na gestão dos seus processos com integração informática.",
-            1991: "A qualidade reconhecida do trabalho desenvolvido a nível nacional leva à conquista de clientes e parcerias internacionais. O mercado internacional começa a crescer e a representar cada vez mais uma parte importante do trabalho e da faturação.",
-            1995: "A necessidade de unificação das pessoas e dos processos levou à aquisição de novo armazém na Zona Industrial do Porto, na Rua Delfim Ferreira, consolidando aqui toda a atividade da empresa que estava fragmentada. Este local é hoje onde se situa a sede e o centro produtivo da empresa.",
-            2006: "É criado o primeiro website institucional para a Socorte que vem dar presença institucional da empresa na web. Pode ser consultado aqui",
-            2013: "Ocorre a aquisição e incorporação da empresa concorrente Texreps Portuguesa - Produtos Têxteis, Lda, detida até então por um grupo sueco. Com esta compra, a Socorte aumenta a sua oferta de produtos e serviços, e assume-se cada vez mais como um fornecedor global de fitas e de acessórios têxteis.",
-            2015: "A Texreps Portuguesa altera o seu nome para Metro ao Quadrado e implementa uma nova imagem para reforço do seu posicionamento como fornecedor de referência de produtos têxteis nos mercados nacional e internacional. Foi ainda criada a marca Metro ao Quadrado, projeto que mais tarde irá dar origem a loja online de venda ao consumidor (https://loja.socorte.pt/).",
-            2016: "É realizado o lançamento de novo website."
-        };
-        
-        function selectYear(year) {
-            document.getElementById("year-title").textContent = year;
-            document.getElementById("year-description").textContent = descriptions[year];
-            
-            document.querySelectorAll(".year").forEach(el => el.classList.remove("active"));
-            document.querySelector(`.year[data-year='${year}']`).classList.add("active");
-        }
-
-
-
-
-
-
-
-
-</script>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
